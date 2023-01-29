@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background-color: rgb(95, 24, 0);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.5;
+}
+
+
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5em;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: 5rem .5rem;
+}
+
+/*=============== HOME ===============*/
+.home {
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.home__container {
+  text-align: center;
+  justify-content: center;
+}
+
+.home__title {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+
+.logo__img {
+  width: 50px;
+}
+
+
+/*=============== BUTTON ===============*/
+.button {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 1.5rem;
+  background-color: rgb(225, 255, 0);
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 300px;
+  justify-self: center;
+}
+
+.second__button {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 1.5rem;
+  background-color: rgb(0, 168, 20);
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 300px;
+  justify-self: center;
+}
+
+
+
+/*=============== FOOTER ===============*/
+.footer {
+  padding-top: 1rem;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer__info {
+display: grid;
+justify-items: center;
+row-gap: 2rem;
+padding: 2rem;
+}
+
+
+/*=============== MEDIA ===============*/
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+
+  .section {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .about__data,
+  .goal__data,
+  .images__content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .think__data img {
+    width: 500px;
+    justify-self: center;
+  }
+
+}
+
+@media screen and (min-width: 1064px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .footer {
+    margin-inline: auto;
+  }
+}
